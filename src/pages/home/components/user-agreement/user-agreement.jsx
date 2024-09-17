@@ -1,9 +1,9 @@
-import "../user-agreement/user-agreement.scss"
+import "./user-agreement.scss"
 
-export default function UserAgreement({ OffUserAgreement }) {
+export default function UserAgreement({ userAgreementToggle }) {
   return (
     <div className="user-agreement">
-      <div className="overlay" onClick={OffUserAgreement}></div>
+      <div className="user-agreement-overlay" onClick={userAgreementToggle}></div>
       <div className="user-agreement-wrapper">
         <h1>Пользовательское соглашение</h1>
         <p>
@@ -11,7 +11,7 @@ export default function UserAgreement({ OffUserAgreement }) {
           присутствие адвоката во время допроса. Если вы не можете оплатить услуги адвоката, он будет предоставлен вам государством. Ваши
           права вам понятны?
         </p>
-        <button type="button" onClick={OffUserAgreement}>
+        <button type="button" onClick={userAgreementToggle}>
           X
         </button>
       </div>

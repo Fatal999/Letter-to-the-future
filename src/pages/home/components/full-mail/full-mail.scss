@@ -1,16 +1,16 @@
-.user-agreement {
+.full-mail {
   position: fixed;
   inset: 0;
   z-index: 10;
 }
 
-.overlay {
+.full-mail-overlay {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.user-agreement-wrapper {
+.full-mail-input {
   position: absolute;
   top: 50%;
   left: 50%;
