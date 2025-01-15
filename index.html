@@ -18,24 +18,104 @@
       href="./favicons/apple-touch-icon.png"
     />
     <link rel="manifest" href="./favicons/site.webmanifest" />
-    <title>Letter to the Future</title>
+    <title>A Letter to the Future</title>
   </head>
   <body
     class="m-0 flex h-full flex-col justify-between bg-cover"
-    style="background-image: url(./images/space-background.jpg)"
+    style="background-image: url(./images/image.png)"
   >
     <header
-      class="ml-[10px] mr-[10px] mt-[10px] flex h-[100px] items-center justify-center rounded-[25px] bg-zinc-800 bg-opacity-75"
+      class="ml-[10px] mr-[10px] mt-[10px] flex h-[100px] items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
     >
-      <h1 class="font-mono font-normal text-white">Header block</h1>
+      <div class="ml-[25px] flex items-center">
+        <img src="./favicons/favicon.svg" width="35" height="35" alt="Logo." />
+        <h1
+          class="ml-[25px] mr-0 font-mono text-5xl font-bold not-italic text-white"
+        >
+          A Letter to the Future
+        </h1>
+      </div>
+      <ul class="mr-[25px] flex list-none items-center">
+        <li class="mr-[25px]">
+          <button
+            class="mr-0 cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            type="button"
+          >
+            Read public letters
+          </button>
+        </li>
+        <li class="mr-[25px]">
+          <button
+            class="mr-0 cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            type="button"
+          >
+            User agreement
+          </button>
+        </li>
+        <li class="mr-[25px]">
+          <button
+            class="mr-0 cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            type="button"
+          >
+            Authors
+          </button>
+        </li>
+      </ul>
     </header>
-    <main class="flex items-center justify-center">
-      <h1 class="font-mono font-bold text-white">Main block</h1>
+    <main class="flex flex-col items-center justify-center">
+      <h1 class="font-mono text-white">Write a Letter to the Future</h1>
+      <p class="w-[1000px] font-mono text-xl text-white">
+        "A Letter to the Future" is a unique website that allows users to write
+        a message to themselves or loved ones for the future. Share your
+        thoughts, dreams, plans, memories, or wishes and set a delivery date — a
+        year, five years, or even a decade later. The website helps preserve
+        moments, inspire reflection, and make the connection with the future
+        more tangible.
+      </p>
+      <form>
+        <input type="text" placeholder="Write your message" required />
+        <div>
+          <h2 class="font-mono text-white">Deliver in:</h2>
+          <label class="font-mono text-white" id="one-month">1 month</label>
+          <input for="one-month" name="deliver" type="radio" checked />
+          <label class="font-mono text-white" id="three-months">3 months</label>
+          <input for="three-months" name="deliver" type="radio" />
+          <label class="font-mono text-white" id="six-months">6 months</label>
+          <input for="six-months" name="deliver" type="radio" />
+          <label class="font-mono text-white" id="one-year">1 year</label>
+          <input for="one-year" name="deliver" type="radio" />
+          <label class="font-mono text-white" id="three-years">3 years</label>
+          <input for="three-years" name="deliver" type="radio" />
+          <label class="font-mono text-white" id="six-years">6 years</label>
+          <input for="six-years" name="deliver" type="radio" />
+          <label class="font-mono text-white" id="ten-years">10 years</label>
+          <input for="ten-years" name="deliver" type="radio" />
+        </div>
+        <div>
+          <h2 class="text-white">Your audience:</h2>
+          <label class="font-mono text-white" id="private">Private</label>
+          <input type="radio" for="private" name="audience" checked />
+          <label class="font-mono text-white" id="public">Public</label>
+          <input type="radio" for="public" name="audience" />
+        </div>
+        <input type="email" placeholder="Your email" required />
+        <button class="font-mono" type="submit">Send to the Future</button>
+      </form>
     </main>
     <footer
-      class="mb-[10px] ml-[10px] mr-[10px] flex h-[100px] items-center justify-center rounded-[25px] bg-zinc-800 bg-opacity-75"
+      class="mb-[10px] ml-[10px] mr-[10px] flex h-[100px] items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
     >
-      <h1 class="font-mono font-normal italic text-white">Footer block</h1>
+      <div class="ml-[25px] flex items-center justify-center">
+        <img src="./favicons/favicon.svg" width="35" height="35" alt="Logo." />
+        <h1
+          class="ml-[25px] mr-0 font-mono text-xl font-bold not-italic text-white"
+        >
+          A Letter to the Future
+        </h1>
+      </div>
+      <span class="mr-[25px] font-mono text-xl text-white"
+        >© By Fatal999 & Alekmatv</span
+      >
     </footer>
   </body>
 </html>
