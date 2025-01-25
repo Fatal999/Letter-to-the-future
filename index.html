@@ -73,34 +73,55 @@
         more tangible.
       </p>
       <form>
-        <input type="text" placeholder="Write your message" required />
-        <div>
-          <h2 class="font-mono text-white">Deliver in:</h2>
-          <label class="font-mono text-white" id="one-month">1 month</label>
-          <input for="one-month" name="deliver" type="radio" checked />
-          <label class="font-mono text-white" id="three-months">3 months</label>
-          <input for="three-months" name="deliver" type="radio" />
-          <label class="font-mono text-white" id="six-months">6 months</label>
-          <input for="six-months" name="deliver" type="radio" />
-          <label class="font-mono text-white" id="one-year">1 year</label>
-          <input for="one-year" name="deliver" type="radio" />
-          <label class="font-mono text-white" id="three-years">3 years</label>
-          <input for="three-years" name="deliver" type="radio" />
-          <label class="font-mono text-white" id="six-years">6 years</label>
-          <input for="six-years" name="deliver" type="radio" />
-          <label class="font-mono text-white" id="ten-years">10 years</label>
-          <input for="ten-years" name="deliver" type="radio" />
+        <div class="relative flex">
+          <input
+            class="w-[1000px] rounded-[25px] border-[8px] pl-[15px] font-mono"
+            type="text"
+            placeholder="Write your message"
+            required
+          />
+          <button class="z-1 absolute right-0 top-0 font-mono" type="submit">
+            Send to the Future
+          </button>
         </div>
-        <div>
-          <h2 class="text-white">Your audience:</h2>
-          <label class="font-mono text-white" id="private">Private</label>
-          <input type="radio" for="private" name="audience" checked />
-          <label class="font-mono text-white" id="public">Public</label>
-          <input type="radio" for="public" name="audience" />
+        <div class="flex">
+          <div>
+            <h2 class="font-mono text-white">Deliver in:</h2>
+            <input for="one-month" name="deliver" type="radio" checked />
+            <label class="font-mono text-white" id="one-month">1 month</label>
+            <input for="three-months" name="deliver" type="radio" />
+            <label class="font-mono text-white" id="three-months"
+              >3 months</label
+            >
+            <input for="six-months" name="deliver" type="radio" />
+            <label class="font-mono text-white" id="six-months">6 months</label>
+            <input for="one-year" name="deliver" type="radio" />
+            <label class="font-mono text-white" id="one-year">1 year</label>
+            <input for="three-years" name="deliver" type="radio" />
+            <label class="font-mono text-white" id="three-years">3 years</label>
+            <input for="six-years" name="deliver" type="radio" />
+            <label class="font-mono text-white" id="six-years">6 years</label>
+            <input for="ten-years" name="deliver" type="radio" />
+            <label class="font-mono text-white" id="ten-years">10 years</label>
+          </div>
+          <div>
+            <h2 class="text-white">Your audience:</h2>
+            <input type="radio" for="private" name="audience" checked />
+            <label class="font-mono text-white" id="private">Private</label>
+            <input type="radio" for="public" name="audience" />
+            <label class="font-mono text-white" id="public">Public</label>
+          </div>
         </div>
-        <input type="email" placeholder="Your email" required />
-        <button class="font-mono" type="submit">Send to the Future</button>
+        <input
+          class="border-8 border-[#243c5a]"
+          type="email"
+          placeholder="Your email"
+          required
+        />
       </form>
+      <button class="border-8 border-indigo-500/100" type="button">
+        RRRAAAAANNN
+      </button>
     </main>
     <footer
       class="mb-[10px] ml-[10px] mr-[10px] flex h-[100px] items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
