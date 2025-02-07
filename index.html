@@ -75,13 +75,17 @@
       <form method="post" action="https://echo.htmlacademy.ru/">
         <div class="relative flex">
           <input
-            class="w-[1000px] rounded-[25px] border-[8px] pl-[15px] font-mono cursor-pointer"
+            class="w-[1000px] cursor-pointer rounded-[25px] border-[8px] pl-[15px] font-mono"
+            id="mailInput"
             name="message"
             type="text"
             placeholder="Write your message"
             required
           />
-          <button class="w-[200px] z-1 absolute right-0 top-0 rounded-[25px] border-[8px] pl-[15px] font-mono bg-transparent cursor-pointer" type="submit">
+          <button
+            class="z-1 absolute right-0 top-0 w-[200px] cursor-pointer rounded-[25px] border-[8px] bg-transparent pl-[15px] font-mono"
+            type="submit"
+          >
             Send to the Future
           </button>
         </div>
@@ -89,58 +93,146 @@
           <div>
             <h2 class="font-mono text-white">Deliver in:</h2>
             <ul class="list-none">
-              <li>
-                <input for="one-month" name="deliver" type="radio" checked />
-                <label class="font-mono text-white" id="one-month">1 month</label>
+              <li class="cursor-pointer">
+                <input
+                  class="cursor-pointer"
+                  name="deliver"
+                  id="one-month"
+                  type="radio"
+                  value="1 month"
+                  checked
+                />
+                <label
+                  class="cursor-pointer font-mono text-white"
+                  for="one-month"
+                  >1 month</label
+                >
               </li>
-              <li>
-                <input for="three-months" name="deliver" type="radio" />
-                <label class="font-mono text-white" id="three-months">3 months</label>
+              <li class="cursor-pointer">
+                <input
+                  class="cursor-pointer"
+                  name="deliver"
+                  id="three-months"
+                  type="radio"
+                  value="3 months"
+                />
+                <label
+                  class="cursor-pointer font-mono text-white"
+                  for="three-months"
+                  >3 months</label
+                >
               </li>
-              <li>
-                <input for="six-months" name="deliver" type="radio" />
-                <label class="font-mono text-white" id="six-months">6 months</label>
+              <li class="cursor-pointer">
+                <input
+                  class="cursor-pointer"
+                  name="deliver"
+                  id="six-months"
+                  type="radio"
+                  value="6 months"
+                />
+                <label
+                  class="cursor-pointer font-mono text-white"
+                  for="six-months"
+                  >6 months</label
+                >
               </li>
-              <li>
-                <input for="one-year" name="deliver" type="radio" />
-                <label class="font-mono text-white" id="one-year">1 year</label>
+              <li class="cursor-pointer">
+                <input
+                  class="cursor-pointer"
+                  name="deliver"
+                  id="one-year"
+                  type="radio"
+                  value="1 year"
+                />
+                <label
+                  class="cursor-pointer font-mono text-white"
+                  for="one-year"
+                  >1 year</label
+                >
               </li>
-              <li>
-                <input for="three-years" name="deliver" type="radio" />
-                <label class="font-mono text-white" id="three-years">3 years</label>
+              <li class="cursor-pointer">
+                <input
+                  class="cursor-pointer"
+                  name="deliver"
+                  id="three-years"
+                  type="radio"
+                  value="3 years"
+                />
+                <label
+                  class="cursor-pointer font-mono text-white"
+                  for="three-years"
+                  >3 years</label
+                >
               </li>
-              <li>
-                <input for="six-years" name="deliver" type="radio" />
-                <label class="font-mono text-white" id="six-years">6 years</label>
+              <li class="cursor-pointer">
+                <input
+                  class="cursor-pointer"
+                  name="deliver"
+                  id="six-years"
+                  type="radio"
+                  value="6 years"
+                />
+                <label
+                  class="cursor-pointer font-mono text-white"
+                  for="six-years"
+                  >6 years</label
+                >
               </li>
-              <li>
-                <input for="ten-years" name="deliver" type="radio" />
-                <label class="font-mono text-white" id="ten-years">10 years</label>
+              <li class="cursor-pointer">
+                <input
+                  class="cursor-pointer"
+                  name="deliver"
+                  id="ten-years"
+                  type="radio"
+                  value="10 years"
+                />
+                <label
+                  class="cursor-pointer font-mono text-white"
+                  for="ten-years"
+                  >10 years</label
+                >
               </li>
             </ul>
           </div>
           <div>
             <h2 class="text-white">Your audience:</h2>
             <ul class="list-none">
-              <li>
-                <input type="radio" for="private" name="audience" checked />
-                <label class="font-mono text-white" id="private">Private</label>
+              <li class="cursor-pointer">
+                <input
+                  class="cursor-pointer"
+                  type="radio"
+                  id="private"
+                  name="audience"
+                  value="Private"
+                  checked
+                />
+                <label class="cursor-pointer font-mono text-white" for="private"
+                  >Private</label
+                >
               </li>
-              <li>
-                <input type="radio" for="public" name="audience" />
-                <label class="font-mono text-white" id="public">Public</label>
+              <li class="cursor-pointer">
+                <input
+                  class="cursor-pointer"
+                  type="radio"
+                  id="public"
+                  name="audience"
+                  value="Public"
+                />
+                <label class="cursor-pointer font-mono text-white" for="public"
+                  >Public</label
+                >
               </li>
             </ul>
           </div>
         </div>
         <div class="flex justify-center">
           <input
-          class="w-[500px] rounded-[25px] border-[8px] pl-[15px] font-mono cursor-pointer"
-          name="email"
-          type="email"
-          placeholder="Your email"
-          required
-        />
+            class="w-[500px] cursor-pointer rounded-[25px] border-[8px] pl-[15px] font-mono"
+            name="email"
+            type="email"
+            placeholder="Your email"
+            required
+          />
         </div>
       </form>
     </main>
@@ -159,5 +251,6 @@
         >© By Fatal999 & Alekmatv</span
       >
     </footer>
+    <script src="src/js/main.js" type="module"></script>
   </body>
 </html>
