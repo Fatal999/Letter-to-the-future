@@ -3,6 +3,9 @@ const mailInput = document.getElementById("mailInput");
 function openModal() {
   const formWrapper = document.querySelector("main > form");
   const mailArea = document.createElement("div");
+  const mailInput = document.getElementById("mailInput");
+
+  mailInput.disabled = true;
 
   mailArea.classList.add("fixed", "inset-[0]", "z-[10]");
 
@@ -31,9 +34,15 @@ function openModal() {
   mailArea.appendChild(mailAreaWrapper);
   mailAreaWrapper.appendChild(mailTextArea);
 
+  mailTextArea.value = mailInput.value;
+
   formWrapper.appendChild(mailArea);
 
   function closeModal() {
+    mailInput.value = mailTextArea.value;
+
+    mailInput.disabled = false;
+
     formWrapper.removeChild(mailArea);
   }
 
