@@ -1,2 +1,3 @@
-import './modal';
-import './date';
+import "./modal";
+import "./date";
+import "./api";
