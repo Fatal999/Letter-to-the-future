@@ -1,7 +1,7 @@
 const mailInput = document.getElementById("mail-input");
+const formWrapper = document.querySelector("main > form");
 
 function openModal() {
-  const formWrapper = document.querySelector("main > form");
   const mailArea = document.createElement("div");
 
   mailInput.disabled = true;
