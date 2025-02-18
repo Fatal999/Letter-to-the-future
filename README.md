@@ -25,3 +25,7 @@
 ---
 
 <p align="center">🔮 Write a Letter to the Future 🔮</p>
+
+---
+
+<p align="center">🔧 HTML, SASS, Tailwind CSS, Vanilla js, Rest API 🔧</p>
