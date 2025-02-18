@@ -1,79 +1,7 @@
+import { errorPopup, successPopup } from "./notification-Popups";
+
 const apiForm = document.querySelector("form");
 const url = "https://letter2future.ru/api/send/";
-const formWrapper = document.querySelector("main > form");
-
-const errorWrapper = document.createElement("div");
-const errorWrapperOverlay = document.createElement("div");
-
-const successWrapper = document.createElement("div");
-const successWrapperOverlay = document.createElement("div");
-
-function errorModal(error) {
-  errorWrapper.classList.add("fixed", "inset-[0]", "z-[10]");
-
-  errorWrapperOverlay.classList.add("absolute", "inset-[0]", "bg-black/50");
-
-  const errorWrapperContainer = document.createElement("div");
-
-  errorWrapperContainer.classList.add(
-    "absolute",
-    "top-[30%]",
-    "left-[30%]",
-    "flex",
-    "bg-white",
-  );
-
-  const errorText = document.createElement("p");
-
-  errorText.classList.add("w-[100px]", "h-[100px]", "font-mono");
-
-  errorText.textContent = error;
-
-  errorWrapper.appendChild(errorWrapperOverlay);
-  errorWrapper.appendChild(errorWrapperContainer);
-  errorWrapperContainer.appendChild(errorText);
-  formWrapper.appendChild(errorWrapper);
-}
-
-function closeErrorModal() {
-  formWrapper.removeChild(errorWrapper);
-}
-
-errorWrapperOverlay.addEventListener("click", closeErrorModal);
-
-function successModal() {
-  successWrapper.classList.add("fixed", "inset-[0]", "z-[10]");
-
-  successWrapperOverlay.classList.add("absolute", "inset-[0]", "bg-black/50");
-
-  const successWrapperContainer = document.createElement("div");
-
-  successWrapperContainer.classList.add(
-    "absolute",
-    "top-[30%]",
-    "left-[30%]",
-    "flex",
-    "bg-white",
-  );
-
-  const successText = document.createElement("p");
-
-  successText.classList.add("w-[100px]", "h-[100px]", "font-mono");
-
-  successText.textContent = "Thank you!";
-
-  successWrapper.appendChild(successWrapperOverlay);
-  successWrapper.appendChild(successWrapperContainer);
-  successWrapperContainer.appendChild(successText);
-  formWrapper.appendChild(successWrapper);
-}
-
-function closeSuccessModal() {
-  formWrapper.removeChild(successWrapper);
-  window.location.reload();
-}
-
-successWrapperOverlay.addEventListener("click", closeSuccessModal);
 
 function dataSubmit(evt) {
   evt.preventDefault();
@@ -99,10 +27,10 @@ function dataSubmit(evt) {
   })
     .then((response) => {
       if (response.ok) {
-        successModal();
+        successPopup();
       } else {
         return response.json().then((errorData) => {
-          errorModal(errorData.text[0]);
+          errorPopup(errorData.text[0]);
         });
       }
     })

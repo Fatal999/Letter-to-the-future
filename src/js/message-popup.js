@@ -1,12 +1,23 @@
 const mailInput = document.getElementById("mail-input");
 const formWrapper = document.querySelector("main > form");
+const formContainer = document.querySelector("form > div");
 
-function openModal() {
+formContainer.classList.add("relative");
+
+function messagePopup() {
   const mailArea = document.createElement("div");
 
   mailInput.disabled = true;
 
-  mailArea.classList.add("fixed", "inset-[0]", "z-[10]");
+  mailArea.classList.add(
+    "absolute",
+    "flex",
+    "inset-[0]",
+    "z-[10]",
+    "column",
+    "justify-center",
+    "items-center",
+  );
 
   const mailAreaOverlay = document.createElement("div");
 
@@ -14,7 +25,7 @@ function openModal() {
 
   const mailAreaWrapper = document.createElement("div");
 
-  mailAreaWrapper.classList.add("absolute", "top-[30%]", "left-[30%]", "flex");
+  mailAreaWrapper.classList.add("absolute", "flex", "w-[500px]", "h-[500px]");
 
   const mailTextArea = document.createElement("textarea");
 
@@ -37,15 +48,25 @@ function openModal() {
 
   formWrapper.appendChild(mailArea);
 
-  function closeModal() {
-    mailInput.value = mailTextArea.value;
+  function closeMessagePopup() {
+    if (formWrapper.contains(mailArea)) {
+      mailInput.value = mailTextArea.value;
 
-    mailInput.disabled = false;
+      mailInput.disabled = false;
 
-    formWrapper.removeChild(mailArea);
+      formWrapper.removeChild(mailArea);
+    }
   }
 
-  mailAreaOverlay.addEventListener("click", closeModal);
+  mailAreaOverlay.addEventListener("click", closeMessagePopup);
+
+  function pressEnter(evt) {
+    if (evt.key === "Enter") {
+      closeMessagePopup();
+    }
+  }
+
+  document.addEventListener("keydown", pressEnter);
 }
 
-mailInput.addEventListener("click", openModal);
+mailInput.addEventListener("click", messagePopup);
