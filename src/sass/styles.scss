@@ -2,3 +2,21 @@
 
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .container-responsive {
+    width: 320px;
+  }
+
+  @media (min-width: 768px) {
+    .container-responsive {
+      width: 368px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container-responsive {
+      width: 1280px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { errorPopup, successPopup } from "./notification-Popups";
+import { errorPopup, successPopup } from "./notification-popups";
 
 const apiForm = document.querySelector("form");
 const url = "https://letter2future.ru/api/send/";
