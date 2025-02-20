@@ -30,32 +30,42 @@
       <div class="ml-[25px] flex items-center">
         <img src="./favicons/favicon.svg" width="35" height="35" alt="Logo." />
         <h1
-          class="ml-[25px] mr-0 font-mono text-5xl font-bold not-italic text-white"
+          class="ml-[25px] mr-0 w-[500px] font-mono text-3xl font-bold not-italic text-white"
         >
           A Letter to the Future
         </h1>
+        <button
+          class="w-[150px] cursor-pointer rounded-[25px] border-[8px] bg-transparent pl-[15px] font-mono text-white"
+          type="button"
+          id="language-toggler"
+        >
+          Switch language
+        </button>
       </div>
-      <ul class="mr-[25px] flex list-none items-center">
-        <li class="mr-[25px]">
+      <ul class="flex list-none items-center p-0">
+        <li class="mr-[20px]">
           <button
-            class="mr-0 cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            class="mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
             type="button"
+            id="public-button"
           >
             Read public letters
           </button>
         </li>
-        <li class="mr-[25px]">
+        <li class="mr-[20px]">
           <button
-            class="mr-0 cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            class="mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
             type="button"
+            id="user-button"
           >
             User agreement
           </button>
         </li>
-        <li class="mr-[25px]">
+        <li>
           <button
-            class="mr-0 cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            class="mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
             type="button"
+            id="authors-button"
           >
             Authors
           </button>
@@ -67,7 +77,7 @@
     >
       <h1 class="font-mono text-white">Write a Letter to the Future</h1>
       <p class="w-[1000px] font-mono text-xl text-white">
-        "A Letter to the Future" is a unique website that allows users to write
+        «A Letter to the Future» is a unique website that allows users to write
         a message to themselves or loved ones for the future. Share your
         thoughts, dreams, plans, memories, or wishes and set a delivery date — a
         year, five years, or even a decade later. The website helps preserve
@@ -87,13 +97,14 @@
           <button
             class="z-1 absolute right-0 top-0 w-[200px] cursor-pointer rounded-[25px] border-[8px] bg-transparent pl-[15px] font-mono"
             type="submit"
+            id="submit-button"
           >
             Send to the Future
           </button>
         </div>
         <div class="flex justify-between">
           <div>
-            <h2 class="font-mono text-white">Deliver in:</h2>
+            <h2 class="font-mono text-white" id="deliver-in">Deliver in:</h2>
             <input
               class="cursor-pointer rounded-[25px] border-[8px] bg-transparent pl-[15px] pr-[15px] font-mono text-white"
               id="deliver-date"
@@ -103,21 +114,19 @@
             />
           </div>
           <div>
-            <h2 class="text-white">Your audience:</h2>
-            <ul class="list-none">
-              <li class="cursor-pointer">
-                <input
-                  class="cursor-pointer"
-                  type="checkbox"
-                  id="private"
-                  name="private"
-                  checked
-                />
-                <label class="cursor-pointer font-mono text-white" for="private"
-                  >Private</label
-                >
-              </li>
-            </ul>
+            <h2 class="text-white" id="your-audience">Your audience:</h2>
+            <div class="flex cursor-pointer justify-end">
+              <input
+                class="cursor-pointer"
+                type="checkbox"
+                id="private"
+                name="private"
+                checked
+              />
+              <label class="cursor-pointer font-mono text-white" for="private"
+                >Private</label
+              >
+            </div>
           </div>
         </div>
         <div class="flex justify-center">
