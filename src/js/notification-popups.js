@@ -1,4 +1,8 @@
+import popups from "./translate";
+
 const formWrapper = document.querySelector("main > form");
+
+const html = document.querySelector("html");
 
 const errorWrapper = document.createElement("div");
 const errorWrapperOverlay = document.createElement("div");
@@ -110,7 +114,11 @@ function successPopup() {
     "m-[0px]",
   );
 
-  successText.textContent = "Thank you!";
+  if (html.lang === "en") {
+    successText.textContent = popups.popups["success-en"];
+  } else {
+    successText.textContent = popups.popups["success-ru"];
+  }
 
   successWrapper.appendChild(successWrapperOverlay);
   successWrapper.appendChild(successWrapperContainer);

@@ -21,31 +21,39 @@
     <title>A Letter to the Future</title>
   </head>
   <body
-    class="container-responsive m-0 mx-auto flex h-full w-[] flex-col justify-between bg-cover"
+    class="container-responsive m-0 mx-auto flex h-full w-[320px] flex-col justify-between bg-cover"
     style="background-image: url(./images/image.png)"
   >
     <header
-      class="container-responsive ml-[10px] mr-[10px] mt-[10px] flex h-[100px] items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
+      class="container-responsive ml-[10px] mr-[10px] mt-[10px] flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75 md:h-[100px] md:flex-row"
     >
-      <div class="ml-[25px] flex items-center">
-        <img src="./favicons/favicon.svg" width="35" height="35" alt="Logo." />
+      <div
+        class="container-responsive flex flex-col items-center md:ml-[25px] md:flex-row"
+      >
+        <img
+          src="./favicons/favicon.svg"
+          class="mt-[10px]"
+          width="35"
+          height="35"
+          alt="Logo."
+        />
         <h1
-          class="ml-[25px] mr-0 w-[500px] font-mono text-3xl font-bold not-italic text-white"
+          class="mr-0 font-mono text-xl font-bold not-italic text-white md:ml-[25px] md:w-[500px]"
         >
           A Letter to the Future
         </h1>
         <button
-          class="w-[150px] cursor-pointer rounded-[25px] border-[8px] bg-transparent pl-[15px] font-mono text-white"
+          class="w-[200px]cursor-pointer rounded-[25px] border-[8px] bg-transparent pl-[15px] font-mono text-white md:w-[150px]"
           type="button"
           id="language-toggler"
         >
           Switch language
         </button>
       </div>
-      <ul class="flex list-none items-center p-0">
+      <ul class="flex list-none flex-col items-center p-0 md:flex-row">
         <li class="mr-[20px]">
           <button
-            class="mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            class="mb-[10px] mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
             type="button"
             id="public-button"
           >
@@ -54,7 +62,7 @@
         </li>
         <li class="mr-[20px]">
           <button
-            class="mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            class="mb-[10px] mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
             type="button"
             id="user-button"
           >
@@ -63,7 +71,7 @@
         </li>
         <li>
           <button
-            class="mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            class="mb-[10px] mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
             type="button"
             id="authors-button"
           >
@@ -73,7 +81,7 @@
       </ul>
     </header>
     <main
-      class="container-responsive flex flex-col items-center justify-center"
+      class="container-responsive flex w-[320px] flex-col items-center justify-center"
     >
       <h1 class="font-mono text-white">Write a Letter to the Future</h1>
       <p class="w-[1000px] font-mono text-xl text-white">
@@ -142,7 +150,7 @@
       </form>
     </main>
     <footer
-      class="container-responsive mb-[10px] ml-[10px] mr-[10px] flex h-[100px] items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
+      class="container-responsive mb-[10px] ml-[10px] mr-[10px] flex h-[100px] w-[320px] items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
     >
       <div class="ml-[25px] flex items-center justify-center">
         <img src="./favicons/favicon.svg" width="35" height="35" alt="Logo." />

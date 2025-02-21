@@ -39,4 +39,9 @@ const footer = {
   "footer-copyright-en": "By © Fatal999 & Alekmatv",
 };
 
-export default { header, main, footer };
+const popups = {
+  "success-ru": "Спасибо!",
+  "success-en": "Thank you!",
+};
+
+export default { header, main, footer, popups };

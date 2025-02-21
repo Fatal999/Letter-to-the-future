@@ -30,7 +30,9 @@ function dataSubmit(evt) {
         successPopup();
       } else {
         return response.json().then((errorData) => {
-          errorPopup(errorData.text[0]);
+          Object.values(errorData)
+            .flat()
+            .forEach((error) => errorPopup(error));
         });
       }
     })
