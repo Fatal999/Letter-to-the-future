@@ -21,11 +21,11 @@
     <title>A Letter to the Future</title>
   </head>
   <body
-    class="container-responsive m-0 mx-auto flex h-full w-[320px] flex-col justify-between bg-cover"
+    class="container-responsive mx-auto flex h-full w-[320px] flex-col items-center justify-between bg-cover bg-fixed bg-center bg-no-repeat"
     style="background-image: url(./images/image.png)"
   >
     <header
-      class="container-responsive ml-[10px] mr-[10px] mt-[10px] flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75 md:h-[100px] md:flex-row"
+      class="container-responsive flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75 md:h-[100px] md:flex-row"
     >
       <div
         class="container-responsive flex flex-col items-center md:ml-[25px] md:flex-row"
@@ -43,7 +43,7 @@
           A Letter to the Future
         </h1>
         <button
-          class="w-[200px]cursor-pointer rounded-[25px] border-[8px] bg-transparent pl-[15px] font-mono text-white md:w-[150px]"
+          class="w-[200px]cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-white md:w-[150px]"
           type="button"
           id="language-toggler"
         >
@@ -51,18 +51,18 @@
         </button>
       </div>
       <ul class="flex list-none flex-col items-center p-0 md:flex-row">
-        <li class="mr-[20px]">
+        <li>
           <button
-            class="mb-[10px] mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            class="mb-[10px] mr-0 w-[175px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-xl text-white"
             type="button"
             id="public-button"
           >
             Read public letters
           </button>
         </li>
-        <li class="mr-[20px]">
+        <li>
           <button
-            class="mb-[10px] mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            class="mb-[10px] mr-0 w-[175px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-xl text-white"
             type="button"
             id="user-button"
           >
@@ -71,7 +71,7 @@
         </li>
         <li>
           <button
-            class="mb-[10px] mr-0 w-[175px] cursor-pointer border-none bg-transparent p-0 font-mono text-xl text-white"
+            class="mb-[10px] mr-0 w-[175px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-xl text-white"
             type="button"
             id="authors-button"
           >
@@ -83,8 +83,10 @@
     <main
       class="container-responsive flex w-[320px] flex-col items-center justify-center"
     >
-      <h1 class="font-mono text-white">Write a Letter to the Future</h1>
-      <p class="w-[1000px] font-mono text-xl text-white">
+      <h1 class="text-center font-mono text-white">
+        Write a Letter to the Future
+      </h1>
+      <p class="w-[300px] text-center font-mono text-xl text-white">
         «A Letter to the Future» is a unique website that allows users to write
         a message to themselves or loved ones for the future. Share your
         thoughts, dreams, plans, memories, or wishes and set a delivery date — a
@@ -92,10 +94,10 @@
         moments, inspire reflection, and make the connection with the future
         more tangible.
       </p>
-      <form>
-        <div class="flex">
+      <form class="relative h-full">
+        <div class="flex flex-col items-center">
           <input
-            class="w-[1000px] cursor-pointer rounded-[25px] border-[8px] pl-[15px] font-mono"
+            class="w-[300px] cursor-pointer rounded-[25px] border-[2px] pl-[15px] font-mono"
             id="mail-input"
             name="message"
             type="text"
@@ -103,18 +105,20 @@
             required
           />
           <button
-            class="z-1 absolute right-0 top-0 w-[200px] cursor-pointer rounded-[25px] border-[8px] bg-transparent pl-[15px] font-mono"
+            class="mt-[25px] w-[200px] cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-white"
             type="submit"
             id="submit-button"
           >
             Send to the Future
           </button>
         </div>
-        <div class="flex justify-between">
+        <div class="flex flex-col items-center justify-between">
           <div>
-            <h2 class="font-mono text-white" id="deliver-in">Deliver in:</h2>
+            <h2 class="font-mono text-xl text-white" id="deliver-in">
+              Deliver in:
+            </h2>
             <input
-              class="cursor-pointer rounded-[25px] border-[8px] bg-transparent pl-[15px] pr-[15px] font-mono text-white"
+              class="cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] pr-[15px] font-mono text-white"
               id="deliver-date"
               name="deliver-date"
               type="date"
@@ -122,8 +126,10 @@
             />
           </div>
           <div>
-            <h2 class="text-white" id="your-audience">Your audience:</h2>
-            <div class="flex cursor-pointer justify-end">
+            <h2 class="font-mono text-xl text-white" id="your-audience">
+              Your audience:
+            </h2>
+            <div class="flex cursor-pointer justify-center">
               <input
                 class="cursor-pointer"
                 type="checkbox"
@@ -140,7 +146,7 @@
         <div class="flex justify-center">
           <input
             id="mail-field"
-            class="w-[500px] cursor-pointer rounded-[25px] border-[8px] pl-[15px] font-mono"
+            class="mb-[25px] mt-[25px] w-[300px] cursor-pointer rounded-[25px] border-[2px] pl-[15px] font-mono"
             name="email"
             type="email"
             placeholder="Your email"
@@ -150,17 +156,21 @@
       </form>
     </main>
     <footer
-      class="container-responsive mb-[10px] ml-[10px] mr-[10px] flex h-[100px] w-[320px] items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
+      class="container-responsive mb-[10px] flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
     >
-      <div class="ml-[25px] flex items-center justify-center">
-        <img src="./favicons/favicon.svg" width="35" height="35" alt="Logo." />
-        <h1
-          class="ml-[25px] mr-0 font-mono text-xl font-bold not-italic text-white"
-        >
+      <div class="flex flex-col items-center justify-center">
+        <img
+          src="./favicons/favicon.svg"
+          class="mt-[10px]"
+          width="35"
+          height="35"
+          alt="Logo."
+        />
+        <h1 class="font-mono text-xl font-bold not-italic text-white">
           A Letter to the Future
         </h1>
       </div>
-      <span class="mr-[25px] font-mono text-xl text-white"
+      <span class="mb-[10px] font-mono text-xl text-white"
         >© By Fatal999 & Alekmatv</span
       >
     </footer>

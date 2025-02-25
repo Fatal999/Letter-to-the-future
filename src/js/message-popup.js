@@ -5,12 +5,14 @@ const formContainer = document.querySelector("form > div");
 formContainer.classList.add("relative");
 
 function messagePopup() {
+  document.body.style.overflow = "hidden";
+
   const mailArea = document.createElement("div");
 
   mailInput.disabled = true;
 
   mailArea.classList.add(
-    "absolute",
+    "fixed",
     "flex",
     "inset-[0]",
     "z-[10]",
@@ -25,16 +27,16 @@ function messagePopup() {
 
   const mailAreaWrapper = document.createElement("div");
 
-  mailAreaWrapper.classList.add("absolute", "flex", "w-[500px]", "h-[500px]");
+  mailAreaWrapper.classList.add("absolute", "flex", "w-[300px]", "h-[300px]");
 
   const mailTextArea = document.createElement("textarea");
 
   mailTextArea.classList.add(
-    "w-[500px]",
-    "h-[500px]",
+    "w-[300px]",
+    "h-[300px]",
     "cursor-pointer",
     "rounded-[25px]",
-    "border-[8px]",
+    "border-[2px]",
     "pl-[15px]",
     "font-mono",
     "resize-none",
@@ -50,6 +52,8 @@ function messagePopup() {
 
   function closeMessagePopup() {
     if (formWrapper.contains(mailArea)) {
+      document.body.style.overflow = "";
+
       mailInput.value = mailTextArea.value;
 
       mailInput.disabled = false;
