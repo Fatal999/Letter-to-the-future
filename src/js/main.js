@@ -4,3 +4,4 @@ import "./api";
 import "./notification-popups";
 import "./translate";
 import "./translate-toggler";
+import "./mobile-menu";

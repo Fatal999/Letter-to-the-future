@@ -30,6 +30,7 @@ function toggleLanguage() {
   html.lang = html.lang === "ru" ? "en" : "ru";
 
   if (html.lang === "en") {
+    document.title = headerObject["title-en"];
     headerTitle.textContent = headerObject["title-en"];
     togglerButton.textContent = headerObject["language-toggler-en"];
     publicButton.textContent = headerObject["public-button-en"];
@@ -48,6 +49,7 @@ function toggleLanguage() {
     footerTitle.textContent = footerObject["footer-title-en"];
     footerCopyright.textContent = footerObject["footer-copyright-en"];
   } else {
+    document.title = headerObject["title-ru"];
     headerTitle.textContent = headerObject["title-ru"];
     togglerButton.textContent = headerObject["language-toggler-ru"];
     publicButton.textContent = headerObject["public-button-ru"];

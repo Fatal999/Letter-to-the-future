@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-full">
+<html lang="ru" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./src/sass/styles.scss" />
@@ -18,64 +18,72 @@
       href="./favicons/apple-touch-icon.png"
     />
     <link rel="manifest" href="./favicons/site.webmanifest" />
-    <title>A Letter to the Future</title>
+    <title>Письмо в будущее</title>
   </head>
   <body
-    class="container-responsive mx-auto flex h-full w-[320px] flex-col items-center justify-between bg-cover bg-fixed bg-center bg-no-repeat"
+    class="container-responsive mx-auto flex w-[320px] flex-col items-center justify-between bg-cover bg-fixed bg-center bg-no-repeat md:w-[768px]"
     style="background-image: url(./images/image.png)"
   >
     <header
-      class="container-responsive flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75 md:h-[100px] md:flex-row"
+      class="container-responsive flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
     >
       <div
-        class="container-responsive flex flex-col items-center md:ml-[25px] md:flex-row"
+        class="container-responsive flex w-[320px] items-center justify-between"
       >
         <img
           src="./favicons/favicon.svg"
-          class="mt-[10px]"
+          class="ml-[10px]"
           width="35"
           height="35"
           alt="Logo."
         />
         <h1
-          class="mr-0 font-mono text-xl font-bold not-italic text-white md:ml-[25px] md:w-[500px]"
+          class="mr-0 bg-transparent text-center font-mono text-lg font-bold not-italic text-white"
         >
-          A Letter to the Future
+          Письмо в будущее
         </h1>
         <button
-          class="w-[200px]cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-white md:w-[150px]"
+          class="mr-[10px] h-[35px] w-[35px] cursor-pointer border-none bg-transparent bg-cover"
+          style="background-image: url(./images/mobile-burger.png)"
           type="button"
-          id="language-toggler"
-        >
-          Switch language
-        </button>
+          id="mobile-menu"
+        ></button>
       </div>
-      <ul class="flex list-none flex-col items-center p-0 md:flex-row">
+      <ul class="hidden list-none flex-col items-center p-0">
         <li>
           <button
-            class="mb-[10px] mr-0 w-[175px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-xl text-white"
+            class="mb-[10px] w-[250px] cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-base text-white"
+            type="button"
+            id="language-toggler"
+          >
+            Переключить язык
+          </button>
+        </li>
+        <li>
+          <button
+            class="mb-[10px] mr-0 w-[250px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white"
             type="button"
             id="public-button"
           >
-            Read public letters
+            Публичные письма
           </button>
         </li>
         <li>
           <button
-            class="mb-[10px] mr-0 w-[175px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-xl text-white"
+            class="mb-[10px] mr-0 w-[250px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white"
             type="button"
             id="user-button"
           >
-            User agreement
+            Пользовательское соглашение
           </button>
         </li>
         <li>
           <button
-            class="mb-[10px] mr-0 w-[175px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-xl text-white"
+            class="mb-[10px] mr-0 w-[250px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white"
             type="button"
             id="authors-button"
           >
-            Authors
+            Авторы
           </button>
         </li>
       </ul>
@@ -83,42 +91,47 @@
     <main
       class="container-responsive flex w-[320px] flex-col items-center justify-center"
     >
-      <h1 class="text-center font-mono text-white">
-        Write a Letter to the Future
+      <h1 class="mb-[25px] mt-[25px] text-center font-mono text-4xl text-white">
+        Напишите письмо в Будущее
       </h1>
-      <p class="w-[300px] text-center font-mono text-xl text-white">
-        «A Letter to the Future» is a unique website that allows users to write
-        a message to themselves or loved ones for the future. Share your
-        thoughts, dreams, plans, memories, or wishes and set a delivery date — a
-        year, five years, or even a decade later. The website helps preserve
-        moments, inspire reflection, and make the connection with the future
-        more tangible.
+      <p
+        class="mb-[50px] mt-0 w-[300px] text-center font-mono text-base text-white"
+      >
+        «Письмо в будущее» — уникальный сайт, позволяющий пользователям писать
+        послание себе или близким о будущем. Поделитесь своими мыслями, мечтами,
+        планами, воспоминаниями или желаниями и установите дату доставки — через
+        год, пять лет или даже десятилетие. Сайт помогает сохранять моменты,
+        вдохновлять на размышления и делать связь с будущим более ощутимой.
       </p>
       <form class="relative h-full">
         <div class="flex flex-col items-center">
           <input
-            class="w-[300px] cursor-pointer rounded-[25px] border-[2px] pl-[15px] font-mono"
+            class="mb-[25px] w-[300px] cursor-pointer rounded-[25px] border-[2px] pl-[15px] font-mono text-base"
             id="mail-input"
             name="message"
             type="text"
-            placeholder="Write your message"
+            placeholder="Напишите ваше письмо"
             required
           />
-          <button
-            class="mt-[25px] w-[200px] cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-white"
-            type="submit"
-            id="submit-button"
-          >
-            Send to the Future
-          </button>
+          <input
+            id="mail-field"
+            class="mb-[25px] w-[300px] cursor-pointer rounded-[25px] border-[2px] pl-[15px] font-mono text-base"
+            name="email"
+            type="email"
+            placeholder="Ваш email"
+            required
+          />
         </div>
         <div class="flex flex-col items-center justify-between">
           <div>
-            <h2 class="font-mono text-xl text-white" id="deliver-in">
-              Deliver in:
+            <h2
+              class="mb-[15px] mt-0 text-center font-mono text-xl text-white"
+              id="deliver-in"
+            >
+              Дата:
             </h2>
             <input
-              class="cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] pr-[15px] font-mono text-white"
+              class="mb-[25px] cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] pr-[15px] font-mono text-base text-white"
               id="deliver-date"
               name="deliver-date"
               type="date"
@@ -126,10 +139,13 @@
             />
           </div>
           <div>
-            <h2 class="font-mono text-xl text-white" id="your-audience">
-              Your audience:
+            <h2
+              class="mb-[15px] mt-0 text-center font-mono text-xl text-white"
+              id="your-audience"
+            >
+              Конфиденциальность:
             </h2>
-            <div class="flex cursor-pointer justify-center">
+            <div class="mb-[25px] flex cursor-pointer justify-center">
               <input
                 class="cursor-pointer"
                 type="checkbox"
@@ -137,41 +153,42 @@
                 name="private"
                 checked
               />
-              <label class="cursor-pointer font-mono text-white" for="private"
-                >Private</label
+              <label
+                class="ml-[5px] cursor-pointer font-mono text-base text-white"
+                for="private"
+                >Приватно</label
               >
             </div>
           </div>
         </div>
         <div class="flex justify-center">
-          <input
-            id="mail-field"
-            class="mb-[25px] mt-[25px] w-[300px] cursor-pointer rounded-[25px] border-[2px] pl-[15px] font-mono"
-            name="email"
-            type="email"
-            placeholder="Your email"
-            required
-          />
+          <button
+            class="mb-[50px] mt-[25px] w-[200px] cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-base text-white"
+            type="submit"
+            id="submit-button"
+          >
+            Отправка в будущее
+          </button>
         </div>
       </form>
     </main>
     <footer
       class="container-responsive mb-[10px] flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
     >
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex items-center justify-center">
         <img
           src="./favicons/favicon.svg"
-          class="mt-[10px]"
+          class="mr-[20px]"
           width="35"
           height="35"
           alt="Logo."
         />
-        <h1 class="font-mono text-xl font-bold not-italic text-white">
-          A Letter to the Future
+        <h1 class="w-[200px] font-mono text-xl font-bold not-italic text-white">
+          Письмо в будущее
         </h1>
       </div>
-      <span class="mb-[10px] font-mono text-xl text-white"
-        >© By Fatal999 & Alekmatv</span
+      <span class="mb-[10px] text-center font-mono text-xl text-white"
+        >Авторы © Fatal999 & Alekmatv</span
       >
     </footer>
     <script src="src/js/main.js" type="module"></script>
