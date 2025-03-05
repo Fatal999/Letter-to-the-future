@@ -9,10 +9,9 @@ const headerObject = header.header;
 const mainObject = main.main;
 const footerObject = footer.footer;
 
-const headerTitle = document.querySelector("div > h1");
+const headerTitle = document.querySelector("div > h1 > a");
 const publicButton = document.getElementById("public-button");
 const userButton = document.getElementById("user-button");
-const authorsButton = document.getElementById("authors-button");
 
 const mainTitle = document.querySelector("main > h1");
 const mainDescription = document.querySelector("main > p");
@@ -20,11 +19,10 @@ const mailInput = document.getElementById("mail-input");
 const submitButton = document.getElementById("submit-button");
 const deliverInTitle = document.getElementById("deliver-in");
 const audienceTitle = document.getElementById("your-audience");
-const privateCheck = document.querySelector("div > label");
+const privateCheck = document.querySelector("div > label > span");
 const mailField = document.getElementById("mail-field");
 
-const footerTitle = document.querySelector("footer > div > h1");
-const footerCopyright = document.querySelector("footer > span");
+const footerTitle = document.querySelector("footer > div > h1 > a");
 
 function toggleLanguage() {
   html.lang = html.lang === "ru" ? "en" : "ru";
@@ -35,7 +33,6 @@ function toggleLanguage() {
     togglerButton.textContent = headerObject["language-toggler-en"];
     publicButton.textContent = headerObject["public-button-en"];
     userButton.textContent = headerObject["user-button-en"];
-    authorsButton.textContent = headerObject["authors-button-en"];
 
     mainTitle.textContent = mainObject["main-title-en"];
     mainDescription.textContent = mainObject["main-description-en"];
@@ -47,14 +44,12 @@ function toggleLanguage() {
     mailField.placeholder = mainObject["mail-field-en"];
 
     footerTitle.textContent = footerObject["footer-title-en"];
-    footerCopyright.textContent = footerObject["footer-copyright-en"];
   } else {
     document.title = headerObject["title-ru"];
     headerTitle.textContent = headerObject["title-ru"];
     togglerButton.textContent = headerObject["language-toggler-ru"];
     publicButton.textContent = headerObject["public-button-ru"];
     userButton.textContent = headerObject["user-button-ru"];
-    authorsButton.textContent = headerObject["authors-button-ru"];
 
     mainTitle.textContent = mainObject["main-title-ru"];
     mainDescription.textContent = mainObject["main-description-ru"];
@@ -65,8 +60,7 @@ function toggleLanguage() {
     privateCheck.textContent = mainObject["private-check-ru"];
     mailField.placeholder = mainObject["mail-field-ru"];
 
-    footerTitle.textContent = footerObject["footer-title-ru"];
-    footerCopyright.textContent = footerObject["footer-copyright-ru"];
+    footerTitle.innerHTML = footerObject["footer-title-ru"];
   }
 }
 

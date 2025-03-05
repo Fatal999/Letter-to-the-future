@@ -5,8 +5,6 @@ const header = {
   "public-button-en": "Read public letters",
   "user-button-ru": "Пользовательское соглашение",
   "user-button-en": "User agreement",
-  "authors-button-ru": "Авторы",
-  "authors-button-en": "Authors",
   "language-toggler-ru": "Переключить язык",
   "language-toggler-en": "Switch language",
 };
@@ -35,13 +33,6 @@ const main = {
 const footer = {
   "footer-title-ru": "Письмо в будущее",
   "footer-title-en": "A Letter to the Future",
-  "footer-copyright-ru": "Авторы © Fatal999 & Alekmatv",
-  "footer-copyright-en": "By © Fatal999 & Alekmatv",
 };
 
-const popups = {
-  "success-ru": "Спасибо!",
-  "success-en": "Thank you!",
-};
-
-export default { header, main, footer, popups };
+export default { header, main, footer };

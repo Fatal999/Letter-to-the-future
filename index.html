@@ -21,11 +21,11 @@
     <title>Письмо в будущее</title>
   </head>
   <body
-    class="container-responsive mx-auto flex w-[320px] flex-col items-center justify-between bg-cover bg-fixed bg-center bg-no-repeat md:w-[768px]"
+    class="container-responsive mx-auto flex w-[320px] flex-col items-center justify-between bg-cover bg-fixed bg-center bg-no-repeat"
     style="background-image: url(./images/image.png)"
   >
     <header
-      class="container-responsive flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
+      class="container-responsive relative flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75"
     >
       <div
         class="container-responsive flex w-[320px] items-center justify-between"
@@ -40,10 +40,14 @@
         <h1
           class="mr-0 bg-transparent text-center font-mono text-lg font-bold not-italic text-white"
         >
-          Письмо в будущее
+          <a
+            class="text-center font-mono text-lg font-bold not-italic text-white no-underline"
+            href="index.html"
+            >Письмо в будущее</a
+          >
         </h1>
         <button
-          class="mr-[10px] h-[35px] w-[35px] cursor-pointer border-none bg-transparent bg-cover"
+          class="mr-[10px] flex h-[35px] w-[35px] cursor-pointer items-center justify-center border-none bg-transparent bg-cover"
           style="background-image: url(./images/mobile-burger.png)"
           type="button"
           id="mobile-menu"
@@ -52,7 +56,7 @@
       <ul class="hidden list-none flex-col items-center p-0">
         <li>
           <button
-            class="mb-[10px] w-[250px] cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-base text-white"
+            class="mb-[10px] flex w-[250px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-base text-white"
             type="button"
             id="language-toggler"
           >
@@ -61,7 +65,7 @@
         </li>
         <li>
           <button
-            class="mb-[10px] mr-0 w-[250px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white"
+            class="mb-[10px] mr-0 flex w-[250px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white"
             type="button"
             id="public-button"
           >
@@ -70,20 +74,11 @@
         </li>
         <li>
           <button
-            class="mb-[10px] mr-0 w-[250px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white"
+            class="mb-[10px] mr-0 flex w-[250px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white"
             type="button"
             id="user-button"
           >
             Пользовательское соглашение
-          </button>
-        </li>
-        <li>
-          <button
-            class="mb-[10px] mr-0 w-[250px] cursor-pointer rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white"
-            type="button"
-            id="authors-button"
-          >
-            Авторы
           </button>
         </li>
       </ul>
@@ -145,25 +140,26 @@
             >
               Конфиденциальность:
             </h2>
-            <div class="mb-[25px] flex cursor-pointer justify-center">
+            <label
+              class="mb-[25px] flex cursor-pointer justify-center font-mono text-base text-white"
+              for="private"
+            >
               <input
-                class="cursor-pointer"
+                class="peer hidden"
                 type="checkbox"
                 id="private"
                 name="private"
-                checked
               />
-              <label
-                class="ml-[5px] cursor-pointer font-mono text-base text-white"
-                for="private"
-                >Приватно</label
-              >
-            </div>
+              <div
+                class="mr-[10px] flex h-[30px] w-[30px] items-center justify-center bg-[url('/images/checkbox-disabled.svg')] bg-center bg-no-repeat peer-checked:bg-[url('/images/checkbox-enabled.svg')]"
+              ></div>
+              <span class="pt-[3px]">Приватно</span>
+            </label>
           </div>
         </div>
         <div class="flex justify-center">
           <button
-            class="mb-[50px] mt-[25px] w-[200px] cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-base text-white"
+            class="mb-[50px] mt-[25px] flex w-[200px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-base text-white"
             type="submit"
             id="submit-button"
           >
@@ -183,13 +179,32 @@
           height="35"
           alt="Logo."
         />
-        <h1 class="w-[200px] font-mono text-xl font-bold not-italic text-white">
-          Письмо в будущее
+        <h1
+          class="w-[200px] text-center font-mono text-xl font-bold not-italic text-white"
+        >
+          <a
+            class="text-center font-mono text-lg font-bold not-italic text-white no-underline"
+            href="index.html"
+            >Письмо в будущее</a
+          >
         </h1>
       </div>
-      <span class="mb-[10px] text-center font-mono text-xl text-white"
-        >Авторы © Fatal999 & Alekmatv</span
+      <span
+        class="mb-[10px] flex w-[250px] justify-around font-mono text-xl text-white"
       >
+        ©
+        <a
+          class="font-mono text-xl text-white no-underline"
+          href="https://github.com/Fatal999"
+          >Fatal999</a
+        >
+        &
+        <a
+          class="font-mono text-xl text-white no-underline"
+          href="https://github.com/Alekmatv"
+          >Alekmatv</a
+        >
+      </span>
     </footer>
     <script src="src/js/main.js" type="module"></script>
   </body>

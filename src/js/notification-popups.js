@@ -1,5 +1,3 @@
-import popups from "./translate";
-
 const formWrapper = document.querySelector("main > form");
 
 const html = document.querySelector("html");
@@ -12,7 +10,7 @@ const successWrapperOverlay = document.createElement("div");
 
 function errorPopup(error) {
   errorWrapper.classList.add(
-    "absolute",
+    "fixed",
     "flex",
     "inset-[0]",
     "z-[10]",
@@ -25,21 +23,13 @@ function errorPopup(error) {
 
   const errorWrapperContainer = document.createElement("div");
 
-  errorWrapperContainer.classList.add(
-    "absolute",
-    "flex",
-    "w-[250px]",
-    "h-[50px]",
-    "bg-white",
-    "flex",
-    "rounded-[25px]",
-  );
+  errorWrapperContainer.classList.add("absolute", "flex", "w-[250px]");
 
   const errorText = document.createElement("p");
 
   errorText.classList.add(
     "w-[250px]",
-    "h-[50px]",
+    "h-[100px]",
     "font-mono",
     "flex",
     "justify-center",
@@ -47,6 +37,9 @@ function errorPopup(error) {
     "text-center",
     "text-red-500",
     "m-[0px]",
+    "bg-white",
+    "rounded-[25px]",
+    "p-[10px]",
   );
 
   errorText.textContent = error;
@@ -77,7 +70,7 @@ function errorPopup(error) {
 
 function successPopup() {
   successWrapper.classList.add(
-    "absolute",
+    "fixed",
     "flex",
     "inset-[0]",
     "z-[10]",
@@ -90,34 +83,29 @@ function successPopup() {
 
   const successWrapperContainer = document.createElement("div");
 
-  successWrapperContainer.classList.add(
-    "absolute",
-    "flex",
-    "w-[250px]",
-    "h-[50px]",
-    "bg-white",
-    "flex",
-    "rounded-[25px]",
-  );
+  successWrapperContainer.classList.add("absolute", "flex", "w-[250px]");
 
   const successText = document.createElement("p");
 
   successText.classList.add(
     "w-[250px]",
-    "h-[50px]",
+    "h-[100px]",
     "font-mono",
     "flex",
     "justify-center",
     "items-center",
     "text-center",
-    "text-red-500",
+    "text-green-500",
     "m-[0px]",
+    "bg-white",
+    "rounded-[25px]",
+    "p-[10px]",
   );
 
   if (html.lang === "en") {
-    successText.textContent = popups.popups["success-en"];
+    successText.textContent = "The letter sent, thank you!";
   } else {
-    successText.textContent = popups.popups["success-ru"];
+    successText.textContent = "Письмо отправлено, спасибо!";
   }
 
   successWrapper.appendChild(successWrapperOverlay);

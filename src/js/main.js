@@ -5,3 +5,5 @@ import "./notification-popups";
 import "./translate";
 import "./translate-toggler";
 import "./mobile-menu";
+import "./user-agreement";
+import "./public-messages";
