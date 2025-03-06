@@ -1,5 +1,6 @@
 const publicButton = document.getElementById("public-button");
 const headerWrapper = document.querySelector("header");
+const url = "https://letter2future.ru/api/public-emails/";
 
 function publicMessages() {
   publicButton.blur();
@@ -27,6 +28,7 @@ function publicMessages() {
   messageAreaWrapper.classList.add(
     "absolute",
     "flex",
+    "flex-col",
     "bg-white",
     "rounded-[25px]",
     "w-[320px]",
@@ -37,6 +39,32 @@ function publicMessages() {
   messageArea.appendChild(messageAreaWrapper);
 
   headerWrapper.appendChild(messageArea);
+
+  function createMessages(data) {
+    data.results.forEach((el) => {
+      const messageText = document.createElement("p");
+      messageText.textContent = el.text;
+      messageAreaWrapper.appendChild(messageText);
+    });
+  }
+
+  fetch(url, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => {
+      if (!response.ok) {
+        console.log("Error", response.status);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Server:", data);
+      createMessages(data);
+    })
+    .catch((error) => console.error("Ошибка запроса:", error));
 
   function closeMessagePopup() {
     if (headerWrapper.contains(messageArea)) {
