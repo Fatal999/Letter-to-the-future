@@ -32,6 +32,7 @@ function publicMessages() {
     "absolute",
     "flex",
     "flex-col",
+    "items-center",
     "bg-white",
     "rounded-[25px]",
     "w-[320px]",
@@ -39,6 +40,8 @@ function publicMessages() {
     "overflow-auto",
     "hide-scrollbar",
     "p-[10px]",
+    "md:w-[700px]",
+    "xl:w-[850px]",
   );
 
   messageArea.appendChild(messageAreaOverlay);
@@ -56,12 +59,13 @@ function publicMessages() {
     "justify-center",
     "items-center",
     "font-mono",
+    "text-base",
     "cursor-pointer",
     "color-black",
     "bg-transparent",
     "border-[2px]",
-    "w-[30px]",
-    "h-[30px]",
+    "w-[40px]",
+    "h-[40px]",
     "rounded-[25px]",
   );
   prevButton.disabled = "true";
@@ -73,12 +77,13 @@ function publicMessages() {
     "justify-center",
     "items-center",
     "font-mono",
+    "text-base",
     "cursor-pointer",
     "color-black",
     "bg-transparent",
     "border-[2px]",
-    "w-[30px]",
-    "h-[30px]",
+    "w-[40px]",
+    "h-[40px]",
     "rounded-[25px]",
   );
 
@@ -91,7 +96,7 @@ function publicMessages() {
     data.results.forEach((el) => {
       const messageText = document.createElement("p");
       messageText.textContent = el.text;
-      messageText.classList.add("font-mono", "text-center");
+      messageText.classList.add("font-mono", "text-center", "text-base");
       messageAreaWrapper.appendChild(messageText);
     });
   }

@@ -27,7 +27,16 @@ function messagePopup() {
 
   const mailAreaWrapper = document.createElement("div");
 
-  mailAreaWrapper.classList.add("absolute", "flex", "w-[300px]", "h-[300px]");
+  mailAreaWrapper.classList.add(
+    "absolute",
+    "flex",
+    "w-[300px]",
+    "h-[300px]",
+    "md:w-[700px]",
+    "md:h-[400px]",
+    "xl:w-[850px]",
+    "xl:h-[500px]",
+  );
 
   const mailTextArea = document.createElement("textarea");
 
@@ -40,6 +49,12 @@ function messagePopup() {
     "pl-[15px]",
     "font-mono",
     "resize-none",
+    "text-base",
+    "md:w-[700px]",
+    "md:h-[400px]",
+    "md:text-lg",
+    "xl:w-[850px]",
+    "xl:h-[500px]",
   );
 
   mailArea.appendChild(mailAreaOverlay);

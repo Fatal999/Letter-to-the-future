@@ -31,6 +31,7 @@ function errorPopup(error) {
     "w-[250px]",
     "h-[100px]",
     "font-mono",
+    "text-base",
     "flex",
     "justify-center",
     "items-center",
@@ -100,6 +101,7 @@ function successPopup() {
     "bg-white",
     "rounded-[25px]",
     "p-[10px]",
+    "text-base",
   );
 
   if (html.lang === "en") {

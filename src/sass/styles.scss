@@ -4,17 +4,17 @@
 @tailwind utilities;
 
 @layer utilities {
-  // @media (min-width: 768px) {
-  //   .container-responsive {
-  //     width: 768px;
-  //   }
-  // }
+  @media (min-width: 768px) {
+    .container-responsive {
+      width: 768px;
+    }
+  }
 
-  // @media (min-width: 1280px) {
-  //   .container-responsive {
-  //     width: 1280px;
-  //   }
-  // }
+  @media (min-width: 1280px) {
+    .container-responsive {
+      width: 1280px;
+    }
+  }
 
   .hide-scrollbar {
     scrollbar-width: none;

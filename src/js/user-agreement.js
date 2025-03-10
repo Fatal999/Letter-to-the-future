@@ -29,6 +29,8 @@ function userPopup() {
     "absolute",
     "flex",
     "w-[320px]",
+    "md:w-[700px]",
+    "xl:w-[850px]",
     "max-h-[80vh]",
     "overflow-auto",
     "hide-scrollbar",
@@ -46,6 +48,7 @@ function userPopup() {
 
   userText.classList.add(
     "font-mono",
+    "text-base",
     "flex",
     "justify-center",
     "items-center",
