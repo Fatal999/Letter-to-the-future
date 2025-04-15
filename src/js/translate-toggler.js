@@ -19,7 +19,7 @@ const mailInput = document.getElementById("mail-input");
 const submitButton = document.getElementById("submit-button");
 const deliverInTitle = document.getElementById("deliver-in");
 const audienceTitle = document.getElementById("your-audience");
-const privateCheck = document.querySelector("div > label > span");
+const privateCheck = document.querySelector("div > label > p");
 const mailField = document.getElementById("mail-field");
 
 const footerTitle = document.querySelector("footer > div > h1 > a");
