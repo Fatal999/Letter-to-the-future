@@ -19,7 +19,7 @@
 
   ## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="45"> This is my pet project, where you can send a letter to the future (sorry, but the server is not working right now)
 
-  ## <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWkwbHVxbGZuemxxbnh2azl5MnI1MjNlejRydXh4ZnVjNXkxNXU1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Nn97Knvcol0rENwFk5/giphy.gif" width="35" height="35"> Stack: HTML, SCSS, JS, Vite, Resr API
+  ## <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWkwbHVxbGZuemxxbnh2azl5MnI1MjNlejRydXh4ZnVjNXkxNXU1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Nn97Knvcol0rENwFk5/giphy.gif" width="35" height="35"> Stack: HTML, SCSS, JS, Vite, Rest API
 
   ## GitHub Pages: https://fatal999.github.io/Letter-to-the-future/
   
