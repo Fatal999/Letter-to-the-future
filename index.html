@@ -1,216 +1,131 @@
 <!doctype html>
 <html lang="ru" class="h-full">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./src/sass/styles.scss" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./favicons/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="./favicons/favicon.svg" />
-    <link rel="shortcut icon" href="./favicons/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicons/apple-touch-icon.png"
-    />
-    <link rel="manifest" href="./favicons/site.webmanifest" />
-    <title>Письмо в будущее</title>
-  </head>
-  <body
-    class="container-responsive mx-auto flex w-[320px] flex-col items-center justify-around bg-[url('/images/image.png')] bg-cover bg-fixed bg-center bg-no-repeat"
-  >
-    <header
-      class="container-responsive relative flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75 xl:flex-row"
-    >
-      <div
-        class="container-responsive flex w-[320px] items-center justify-between md:mt-[15px] md:justify-center xl:mt-0 xl:w-auto"
-      >
-        <img
-          src="./favicons/favicon.svg"
-          class="ml-[10px] md:mr-[15px] xl:ml-[20px]"
-          width="35"
-          height="35"
-          alt="Logo."
-        />
-        <h1
-          class="mr-0 bg-transparent text-center font-mono text-lg font-bold not-italic text-white"
-        >
-          <a
-            class="text-center font-mono text-lg font-bold not-italic text-white no-underline md:text-2xl xl:text-3xl"
-            href="index.html"
-            >Письмо в будущее</a
-          >
-        </h1>
-        <button
-          class="mr-[10px] flex h-[35px] w-[35px] cursor-pointer items-center justify-center border-none bg-transparent bg-[url('/images/mobile-burger.png')] bg-cover md:hidden"
-          type="button"
-          id="mobile-menu"
-        ></button>
-      </div>
-      <ul
-        class="hidden list-none flex-col items-center p-0 md:mb-0 md:flex md:flex-row xl:mr-[20px] xl:mt-0"
-      >
-        <li>
-          <button
-            class="mb-[10px] flex w-[250px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-base text-white md:mb-[20px] md:mr-[10px] md:w-[230px] md:text-sm xl:mb-0 xl:mr-[10px] xl:h-[30px] xl:w-[250px] xl:text-base"
-            type="button"
-            id="language-toggler"
-          >
-            Переключить язык
-          </button>
-        </li>
-        <li>
-          <button
-            class="mb-[10px] mr-0 flex w-[250px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white md:mb-[20px] md:mr-[10px] md:w-[230px] md:text-sm xl:mb-0 xl:mr-[10px] xl:h-[30px] xl:w-[250px] xl:text-base"
-            type="button"
-            id="public-button"
-          >
-            Публичные письма
-          </button>
-        </li>
-        <li>
-          <button
-            class="mb-[10px] mr-0 flex w-[250px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white md:mb-[20px] md:mr-[10px] md:w-[230px] md:text-sm xl:mb-0 xl:mr-0 xl:h-[30px] xl:w-[250px] xl:text-base"
-            type="button"
-            id="user-button"
-          >
-            Пользовательское соглашение
-          </button>
-        </li>
-      </ul>
-    </header>
-    <main
-      class="container-responsive flex w-[320px] flex-col items-center justify-center"
-    >
-      <h1
-        class="mb-[25px] mt-[25px] text-center font-mono text-2xl text-white md:mb-[40px] md:mt-[40px] md:text-4xl xl:mb-[50px] xl:mt-[50px] xl:text-5xl"
-      >
-        Напишите письмо в Будущее
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./src/sass/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./favicons/favicon.svg" />
+  <link rel="shortcut icon" href="./favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="./favicons/site.webmanifest" />
+  <title>Письмо в будущее</title>
+</head>
+
+<body
+  class="container-responsive mx-auto flex w-[320px] flex-col items-center justify-around bg-[url('/images/image.png')] bg-cover bg-fixed bg-center bg-no-repeat">
+  <header
+    class="container-responsive relative flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75 xl:flex-row">
+    <div
+      class="container-responsive flex w-[320px] items-center justify-between md:mt-[15px] md:justify-center xl:mt-0 xl:w-auto">
+      <img src="./favicons/favicon.svg" class="ml-[10px] md:mr-[15px] xl:ml-[20px]" width="35" height="35"
+        alt="Logo." />
+      <h1 class="mr-0 bg-transparent text-center font-mono text-lg font-bold not-italic text-white">
+        <a class="text-center font-mono text-lg font-bold not-italic text-white no-underline md:text-2xl xl:text-3xl"
+          href="index.html">Письмо в будущее</a>
       </h1>
-      <p
-        class="mb-[50px] mt-0 w-[300px] text-center font-mono text-base text-white md:w-[700px] md:text-lg xl:mb-[75px] xl:text-xl"
-      >
-        «Письмо в будущее» — уникальный сайт, позволяющий пользователям писать
-        послание себе или близким о будущем. Поделитесь своими мыслями, мечтами,
-        планами, воспоминаниями или желаниями и установите дату доставки — через
-        год, пять лет или даже десятилетие. Сайт помогает сохранять моменты,
-        вдохновлять на размышления и делать связь с будущим более ощутимой.
-      </p>
-      <form class="relative h-full">
-        <div class="flex flex-col items-center xl:flex-row">
-          <input
-            class="mb-[25px] w-[285px] cursor-pointer rounded-[25px] border-[2px] pl-[15px] font-mono text-base md:w-[450px] md:text-lg xl:mb-[50px] xl:mr-[30px]"
-            id="mail-input"
-            name="message"
-            type="text"
-            placeholder="Напишите ваше письмо"
-            required
-          />
-          <input
-            id="mail-field"
-            class="mb-[25px] w-[285px] cursor-pointer rounded-[25px] border-[2px] pl-[15px] font-mono text-base md:w-[450px] md:text-lg xl:mb-[50px]"
-            name="email"
-            type="email"
-            placeholder="Ваш email"
-            required
-          />
-        </div>
-        <div class="flex flex-col items-center justify-between md:flex-row">
-          <div>
-            <h2
-              class="mb-[15px] mt-0 text-center font-mono text-xl text-white md:text-lg xl:text-xl"
-              id="deliver-in"
-            >
-              Дата:
-            </h2>
-            <input
-              class="mb-[25px] cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] pr-[15px] font-mono text-base text-white md:text-lg xl:text-xl"
-              id="deliver-date"
-              name="deliver-date"
-              type="date"
-              value="2001-09-11"
-            />
-          </div>
-          <div>
-            <h2
-              class="mb-[15px] mt-0 text-center font-mono text-xl text-white md:text-lg xl:text-xl"
-              id="your-audience"
-            >
-              Конфиденциальность:
-            </h2>
-            <label
-              class="mb-[25px] flex cursor-pointer justify-center font-mono text-base text-white md:text-lg xl:text-xl"
-              for="private"
-            >
-              <input
-                class="peer hidden"
-                type="checkbox"
-                id="private"
-                name="private"
-                checked
-              />
-              <span
-                class="mr-[10px] flex h-[30px] w-[30px] items-center justify-center bg-[url('/images/checkbox-disabled.svg')] bg-center bg-no-repeat peer-checked:bg-[url('/images/checkbox-enabled.svg')]"
-              ></span>
-              <p class="m-0 font-mono text-xl text-white md:text-lg xl:text-xl">
-                Приватно
-              </p>
-            </label>
-          </div>
-        </div>
-        <div class="flex justify-center">
-          <button
-            class="mb-[50px] mt-[25px] flex w-[200px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-base text-white md:mb-[100px] md:mt-[50px] md:w-[300px] md:text-lg xl:mb-[115px] xl:h-[40px] xl:w-[350px] xl:text-xl"
-            type="submit"
-            id="submit-button"
-          >
-            Отправка в будущее
-          </button>
-        </div>
-      </form>
-    </main>
-    <footer
-      class="container-responsive mb-[10px] flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75 md:flex-row"
-    >
-      <div class="flex items-center justify-center md:ml-[20px] xl:ml-0">
-        <img
-          src="./favicons/favicon.svg"
-          class="mr-0 md:mr-[20px] xl:ml-[20px]"
-          width="35"
-          height="35"
-          alt="Logo."
-        />
-        <h1
-          class="w-[200px] text-center font-mono text-xl font-bold not-italic text-white md:w-auto"
-        >
-          <a
-            class="text-center font-mono text-lg font-bold not-italic text-white no-underline md:text-2xl xl:text-3xl"
-            href="index.html"
-            >Письмо в будущее</a
-          >
-        </h1>
+      <button
+        class="mr-[10px] flex h-[35px] w-[35px] cursor-pointer items-center justify-center border-none bg-transparent bg-[url('/images/mobile-burger.png')] bg-cover md:hidden"
+        type="button" id="mobile-menu"></button>
+    </div>
+    <ul class="hidden list-none flex-col items-center p-0 md:mb-0 md:flex md:flex-row xl:mr-[20px] xl:mt-0">
+      <li>
+        <button
+          class="mb-[10px] flex w-[250px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-base text-white md:mb-[20px] md:mr-[10px] md:w-[230px] md:text-sm xl:mb-0 xl:mr-[10px] xl:h-[30px] xl:w-[250px] xl:text-base"
+          type="button" id="language-toggler">
+          Переключить язык
+        </button>
+      </li>
+      <li>
+        <button
+          class="mb-[10px] mr-0 flex w-[250px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white md:mb-[20px] md:mr-[10px] md:w-[230px] md:text-sm xl:mb-0 xl:mr-[10px] xl:h-[30px] xl:w-[250px] xl:text-base"
+          type="button" id="public-button">
+          Публичные письма
+        </button>
+      </li>
+      <li>
+        <button
+          class="mb-[10px] mr-0 flex w-[250px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent p-0 font-mono text-base text-white md:mb-[20px] md:mr-[10px] md:w-[230px] md:text-sm xl:mb-0 xl:mr-0 xl:h-[30px] xl:w-[250px] xl:text-base"
+          type="button" id="user-button">
+          Пользовательское соглашение
+        </button>
+      </li>
+    </ul>
+  </header>
+  <main class="container-responsive flex w-[320px] flex-col items-center justify-center">
+    <h1
+      class="mb-[25px] mt-[25px] text-center font-mono text-2xl text-white md:mb-[40px] md:mt-[40px] md:text-4xl xl:mb-[50px] xl:mt-[50px] xl:text-5xl">
+      Напишите письмо в Будущее
+    </h1>
+    <p
+      class="mb-[50px] mt-0 w-[300px] text-center font-mono text-base text-white md:w-[700px] md:text-lg xl:mb-[75px] xl:text-xl">
+      «Письмо в будущее» — уникальный сайт, позволяющий пользователям писать
+      послание себе или близким о будущем. Поделитесь своими мыслями, мечтами,
+      планами, воспоминаниями или желаниями и установите дату доставки — через
+      год, пять лет или даже десятилетие. Сайт помогает сохранять моменты,
+      вдохновлять на размышления и делать связь с будущим более ощутимой.
+    </p>
+    <form class="relative h-full">
+      <div class="flex flex-col items-center xl:flex-row">
+        <input
+          class="mb-[25px] w-[285px] cursor-pointer rounded-[25px] border-[2px] pl-[15px] font-mono text-base md:w-[450px] md:text-lg xl:mb-[50px] xl:mr-[30px]"
+          id="mail-input" name="message" type="text" placeholder="Напишите ваше письмо" required />
+        <input id="mail-field"
+          class="mb-[25px] w-[285px] cursor-pointer rounded-[25px] border-[2px] pl-[15px] font-mono text-base md:w-[450px] md:text-lg xl:mb-[50px]"
+          name="email" type="email" placeholder="Ваш email" required />
       </div>
-      <span
-        class="mb-[10px] flex w-[250px] justify-around font-mono text-xl text-white md:mb-0 md:mr-[20px]"
-      >
-        ©
-        <a
-          class="font-mono text-xl text-white no-underline"
-          href="https://github.com/Fatal999"
-          >Fatal999</a
-        >
-        &
-        <a
-          class="font-mono text-xl text-white no-underline"
-          href="https://github.com/Alekmatv"
-          >Alekmatv</a
-        >
-      </span>
-    </footer>
-    <script src="src/js/main.js" type="module"></script>
-  </body>
+      <div class="flex flex-col items-center justify-between md:flex-row">
+        <div>
+          <h2 class="mb-[15px] mt-0 text-center font-mono text-xl text-white md:text-lg xl:text-xl" id="deliver-in">
+            Дата:
+          </h2>
+          <input
+            class="mb-[25px] cursor-pointer rounded-[25px] border-[2px] bg-transparent pl-[15px] pr-[15px] font-mono text-base text-white md:text-lg xl:text-xl"
+            id="deliver-date" name="deliver-date" type="date" value="2001-09-11" />
+        </div>
+        <div>
+          <h2 class="mb-[15px] mt-0 text-center font-mono text-xl text-white md:text-lg xl:text-xl" id="your-audience">
+            Конфиденциальность:
+          </h2>
+          <label
+            class="mb-[25px] flex cursor-pointer justify-center font-mono text-base text-white md:text-lg xl:text-xl"
+            for="private">
+            <input class="peer hidden" type="checkbox" id="private" name="private" checked />
+            <span
+              class="mr-[10px] flex h-[30px] w-[30px] items-center justify-center bg-[url('/images/checkbox-disabled.svg')] bg-center bg-no-repeat peer-checked:bg-[url('/images/checkbox-enabled.svg')]"></span>
+            <p class="m-0 font-mono text-xl text-white md:text-lg xl:text-xl">
+              Приватно
+            </p>
+          </label>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button
+          class="mb-[50px] mt-[25px] flex w-[200px] cursor-pointer items-center justify-center rounded-[25px] border-[2px] bg-transparent pl-[15px] font-mono text-base text-white md:mb-[100px] md:mt-[50px] md:w-[300px] md:text-lg xl:mb-[115px] xl:h-[40px] xl:w-[350px] xl:text-xl"
+          type="submit" id="submit-button">
+          Отправка в будущее
+        </button>
+      </div>
+    </form>
+  </main>
+  <footer
+    class="container-responsive mb-[10px] flex w-[320px] flex-col items-center justify-between rounded-[25px] bg-zinc-800 bg-opacity-75 md:flex-row">
+    <div class="flex items-center justify-center md:ml-[20px] xl:ml-0">
+      <img src="./favicons/favicon.svg" class="mr-0 md:mr-[20px] xl:ml-[20px]" width="35" height="35" alt="Logo." />
+      <h1 class="w-[200px] text-center font-mono text-xl font-bold not-italic text-white md:w-auto">
+        <a class="text-center font-mono text-lg font-bold not-italic text-white no-underline md:text-2xl xl:text-3xl"
+          href="index.html">Письмо в будущее</a>
+      </h1>
+    </div>
+    <span class="mb-[10px] flex w-[250px] justify-around font-mono text-xl text-white md:mb-0 md:mr-[20px]">
+      ©
+      <a class="font-mono text-xl text-white no-underline" href="https://github.com/Fatal999">Fatal999</a>
+      &
+      <a class="font-mono text-xl text-white no-underline" href="https://github.com/Alekmatv">Alekmatv</a>
+    </span>
+  </footer>
+  <script src="src/js/main.js" type="module"></script>
+</body>
+
 </html>

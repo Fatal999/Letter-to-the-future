@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/SpaceMono-Regular.woff2") format("woff2"), url("../../fonts/SpaceMono-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../fonts/SpaceMono-Italic.woff2") format("woff2"), url("../../fonts/SpaceMono-Italic.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/SpaceMono-Bold.woff2") format("woff2"), url("../../fonts/SpaceMono-Bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../../fonts/SpaceMono-BoldItalic.woff2") format("woff2"), url("../../fonts/SpaceMono-BoldItalic.woff") format("woff");
+  font-display: swap;
+}
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  @media (min-width: 768px) {
+    .container-responsive {
+      width: 768px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .container-responsive {
+      width: 1280px;
+    }
+  }
+  .hide-scrollbar {
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
