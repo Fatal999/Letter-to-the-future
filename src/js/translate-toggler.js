@@ -1,6 +1,6 @@
-import header from "../js/translate";
-import main from "../js/translate";
-import footer from "../js/translate";
+import header from "../js/translate.js";
+import main from "../js/translate.js";
+import footer from "../js/translate.js";
 
 const togglerButton = document.getElementById("language-toggler");
 const html = document.querySelector("html");
