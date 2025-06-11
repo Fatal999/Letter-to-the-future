@@ -125,7 +125,16 @@ function publicMessages() {
       prevUrl = data.previous;
       dataNext = data;
     })
-    .catch((error) => console.error("Ошибка запроса:", error));
+
+    .catch((error) => {
+      const messageErrorText = document.createElement("p");
+      messageErrorText.textContent = "Sorry, there was a server error, emails are temporarily unavailable.";
+      messageErrorText.classList.add(
+        "font-mono",
+        "text-base",
+      )
+      messageAreaWrapper.appendChild(messageErrorText);
+    });
 
   function nextMessagePage() {
     if (dataNext.next !== null) {

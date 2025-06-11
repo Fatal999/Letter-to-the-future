@@ -18,7 +18,7 @@ function dataSubmit(evt) {
     private: privateCheck,
   };
 
-  fetch(url, {
+  fetch("https://letter2future.ru/api/send", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -33,10 +33,14 @@ function dataSubmit(evt) {
           Object.values(errorData)
             .flat()
             .forEach((error) => errorPopup(error));
+          console.error("Server returned error:", errorData);
         });
       }
     })
-    .catch((error) => console.error("Error:", error));
+    .catch((error) => {
+      errorPopup("A network error has occurred. Please try again later.");
+      console.error("Fetch error:", error);
+    });
 }
 
 apiForm.addEventListener("submit", dataSubmit);
