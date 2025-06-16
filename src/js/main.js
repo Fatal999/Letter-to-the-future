@@ -1,9 +1,0 @@
-import "./message-popup.js";
-import "./date.js";
-import "./api.js";
-import "./notification-popups.js";
-import "./translate.js";
-import "./translate-toggler.js";
-import "./mobile-menu.js";
-import "./user-agreement.js";
-import "./public-messages.js";
